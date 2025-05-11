@@ -821,7 +821,7 @@ nav {
     margin: 0 auto;
      /* or whatever size fits your layout */
     height: auto;
-    width: 1600;
+    width: 100vmin;
     /* border-radius:0% */
   }
   
@@ -832,7 +832,6 @@ nav {
   
   /* FAQ Section Styling */
 .faq-section {
-  max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
   font-family: Arial, sans-serif;
