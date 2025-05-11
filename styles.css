@@ -903,7 +903,7 @@ nav {
 
 .contact-info p {
     color: var(--gray-color);
-    /* margin-bottom: 8px; */
+    margin-bottom: 8px;
     margin: 2px 0 0;
 }
 
