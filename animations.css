@@ -1,0 +1,83 @@
+/* Animated Text */
+.animated-text {
+    height: 60px;
+    overflow: hidden;
+}
+
+.animated-text span {
+    position: relative;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.animated-text span::before {
+    content: "";
+    animation: words 12s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: var(--light-gray-color);
+    border-left: 2px solid var(--primary-color);
+    right: -8px;
+    animation: cursor 0.8s infinite, typing 12s steps(12) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid transparent;
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Graphic Designer";
+    }
+    21%, 40% {
+        content: "UI/UX Designer";
+    }
+    41%, 60% {
+        content: "Front-End Developer";
+    }
+    61%, 80% {
+        content: "Creative Technologist";
+    }
+    61%, 80% {
+        content: "Nguvu-TEACH Founder";
+    }
+    81%, 100% {
+        content: "Co-Founder KI4BLI";
+    }
+    0%, 20% {
+        content: "Site Manager Sanivation";
+    }
+
+    81%, 100% {
+        content: "Community Advocate";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
