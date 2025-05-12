@@ -151,13 +151,14 @@
                             <p>Available</p>
                         </div>
                     </div>
-                    
-                    <!-- <a href="#" class="btn">Download CV</a> -->
-                    <a href="/Alfred-CV.pdf" download class="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600">
-                        Download CV
-                      </a>                      
-                </div>
-            </div>
+                   
+                    <div class="hero-buttons">
+                            <a href="/Alfred-CV.pdf" download class="btn">Download CV</a>
+                            <a href="https://drive.google.com/file/d/1cv5HiMTtQLXGJP-LN7ffK2Awm89xb2Rc/view?usp=drivesdk" 
+                                        target="_blank" class="btn btn-outline">Academic & Certifications Docs</a>
+                            <a href="https://drive.google.com/file/d/1czhofHErFd5dQgGEzwAKgiLz5WDd18Z1/view?usp=drivesdk" target="_blank" class="btn btn-outline">Recomendations</a>
+                    </div>
+
         </div>
     </section>
 
@@ -496,6 +497,10 @@
                     <span>Youth Mentorship</span>
                     <span>Digital Literacy Training</span>
                     <span>Community Engagement</span>
+                    <span>Business Coaching& Mentorship</span>
+                    <span>IT & Networking</span>
+                    <span>Data Collection (Research)</span>
+
                 </div>
             </div>
         </div>
@@ -666,11 +671,21 @@
                         </div>
                     </div>
                 </div>
+                <!-- Calendly inline widget begin -->
+                <div class="calendar-wrapper" style="text-align: center; margin-top: 40px;background-color:#43D9B5">
+                    <h3 style="color:#980000; margin-bottom: 45px;">Book a Meeting</h3>
+                        <div class="calendly-inline-widget"
+                                 data-url="https://calendly.com/alfredbalazirelurhakongola/new-meeting?hide_event_type_details=1&hide_gdpr_banner=1&background_color=26a6a2&text_color=ffffff"
+                            style="min-width: 320px; height: 500px; margin: 8px;  color: #980000;">
+                        </div>
+                    
+                </div>
+
                 
            
                 <form action="https://formsubmit.co/alfredbalazirerealba@gmail.com" method="POST" class="contact-form">
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="Rhoda" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
                         <input type="email" name="email" placeholder="Your Email" required>
@@ -688,12 +703,20 @@
                     <input type="hidden" name="_next" value="https://your-website.com/thank-you.html">
                 
                     <button type="submit" class="btn">Send Message</button>
+                    <input type="hidden" name="_next" value="https://alfredluba.github.io/PORTFOLIO_Alfred/thank-you.html">
+
                 </form>
                 
             </div>
         </div>
-
-        
+         <div class="thank-you-box">
+    <h1>Thank You for Contacting Me!</h1>
+    <p>
+      I’ve received your message and truly appreciate your interest.<br>
+      Whether it's in web development, graphic design, M&E, ICT training, or entrepreneurship, I’m excited to connect and collaborate.<br>
+      I’ll get back to you as soon as possible.
+    </p>
+  </div>   
     </section>
 
     <!-- Footer -->
@@ -709,14 +732,14 @@
                     <a href="#about">About</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#contact">Contact</a>
-                </div>
+
             </div>
             <div class="copyright">
                 <p>&copy; 2024 Alfred Balazire. All Rights Reserved.</p>
             </div>
-        </div>
-        
-          
+
+           
+        </div>   
     </footer>
 
     <!-- Back to Top Button -->
@@ -727,6 +750,7 @@
       AOS.init();
 </script>
  <script src="script.js"></script> <!-- If you have any additional JS -->
+ <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 </body>
 </html>
