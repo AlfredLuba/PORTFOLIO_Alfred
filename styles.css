@@ -147,6 +147,25 @@ header.scrolled {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+.translate-container {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1000;
+}
+@media (max-width: 768px) {
+  .translate-container {
+    top: 80px; /* or adjust as needed for your layout */
+    right: 10px;
+  }
+}
+.goog-logo-link, .goog-te-gadget span {
+    display: none !important;
+}
+
+
+
+
 /* Basic dropdown styles */
 .nav-links li {
     position: relative;
@@ -351,6 +370,44 @@ nav {
     margin-bottom: 30px;
     color:black
 }
+
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 4 columns on desktop */
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.education-item {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.education-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+
+}
+
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .education-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
+
+
+
+
+
 
 .personal-info {
     display: grid;

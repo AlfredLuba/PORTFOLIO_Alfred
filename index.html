@@ -12,6 +12,22 @@
     <link rel="stylesheet" href="KEEP.css">
     <!-- AOS Library CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,fr,sw,ar',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: true
+    }, 'google_translate_element');
+  }
+</script>
+
+<script type="text/javascript" 
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
 
 
@@ -19,8 +35,12 @@
 <body>
     <!-- Header/Navbar -->
     <header>
+       
+
         <div class="container">
             <nav>
+                <div id="google_translate_element"></div>
+
                 <div class="logo">
                     <img src="MY_IMAGES/NguvuLogo.png" alt="Logo" style="width: 80px; height: 80px; border-radius: 50%;">
                     
@@ -41,16 +61,29 @@
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                   </ul>
-                  
-                <!-- <ul class="nav-links">
+                <ul class="nav-links" style="display: flex; gap: 20px; align-items: center;color: #980000;">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#work-experience">Experience</a></li>
+                    <li class="dropdown">
+                        <a href="#work-experience">Experience</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#work-experience">Professional Experience</a></li>
+                            <li><a href="#leadership">Leadership & Initiative</a></li>
+                        </ul>
+
+                    </li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
-                </ul> -->
-                
+                </ul>
+
+                <!-- Add this translate box here -->
+                <div class="translate-container">
+                <div id="google_translate_element"></div>
+                </div>
+
+                                
                 <div class="hamburger">
                     <div class="line"></div>
                     <div class="line"></div>
@@ -59,6 +92,9 @@
             </nav>
         </div>
     </header>
+        <div class="translate-container">
+        <div id="google_translate_element"></div>
+        </div>
     <section id="home" class="hero" class="hero" style="min-height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #e7e7e7;">
         <div class="containers">
             <div class="profile" style="background-color:#218380; padding: 40px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); text-align: center;">
@@ -82,44 +118,6 @@
             </div>
         </div>
     </section>
-
-    
-    <!-- Hero Section -->
-    <!-- Hero Section -->
-<!-- Hero Section -->
-    <!-- Hero Section -->
-
-     <!--<section id="home" class="hero" style="min-height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #e7e7e7;">
-        <! <div class="containers">
-            <div class="profile" style="background-color: #f0f0f0;min-width: 100vh; padding: 5%; border-radius: 12px; text-align: center; margin: auto;  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);">
-      
-      < Profile Image -->
-                <!-- <img src="MY_IMAGES/AlfredPict.png" alt="Alfred Balazire" class="profile-img" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; border: 4px solid #ffffff; margin-bottom: 20px; align-items: center;"> -->
-
-      
-                <!-- <h1 style="font-size: 36px; margin-bottom: 10px;">Alfred <span style="color: #007bff;">Balazire</span></h1>
-                <h2 class="animated-text" style="color: #980000; font-size: 24px;">
-                Graphic Designer 
-                <strong style="color: rgb(60, 155, 9); font-size: 24px;">& <span id="animated-role"></span></strong>
-                </h2> -->
-
-      <!-- 
-                    <p style="margin: 20px auto; max-width: 600px; font-size: 16px; color: #333;">
-        Creating impactful visual solutions that combine creativity with technical precision to inspire and transform communities.
-                    </p>
-
-        
-                <div class="hero-buttons" style="margin-top: 30px;">
-                <a href="#portfolio" class="btn" style="background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; margin-right: 10px; text-decoration: none;">View My Work</a>
-                <a href="#contact" class="btn btn-outline" style="border: 2px solid #007bff; color: #007bff; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Contact Me</a>
-                </div>
-
-            </div>
-        </div> -->
-    <!--</section>-->
-
-
-
     <!-- About Section -->
     <section id="about" class="about" style="margin-top: 8vh;">
         <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200" class="container">
@@ -129,10 +127,33 @@
                     <img src="MY_IMAGES/AlfredPict.png" alt="Alfred Balazire">
                 </div>
                 <div class="about-text">
-                    <h3>Graphic Designer & Creative Technologist</h3>
-                    <p>I am a passionate Graphic Designer, Front-End Developer, and Trainer with over 7 years of experience in design, development, and community engagement. As a Refugee Youth Advocate, I believe in the power of technology and design to inspire, educate, and transform communities.</p>
-                    <p>With hands-on experience in various design tools and platforms, I bring both creativity and technical precision to every project. I combine technical web knowledge with a strong foundation in visual storytelling and branding.</p>
-                    
+                   <h3 style="color: #980000;">Front-End Developer, Graphic Designer & Social Impact Technologist</h3>
+                        <p>
+                            I am a purpose-driven Front-End Developer, Graphic Designer, and Creative Technologist with over 7 years of experience blending technical precision with human-centered design to create meaningful digital solutions. My work lies at the intersection of technology, community empowerment, and visual storytelling.
+                            </p>
+
+                        <p>
+                        As the <strong>Founder of Nguvu TEACH EdTech</strong> and <strong>Co-Founder of KI4BLI</strong>, I have championed digital transformation among refugees and marginalised African youth by delivering high-quality training in web development, graphic design, entrepreneurship, and digital literacy. Through these initiatives, I aim to break cycles of exclusion and build bridges toward opportunity.
+                        </p>
+
+                    <details>
+                        <summary><h3><strong style="color: #980000;">Learn More About My Mission and</strong></h3></summary>
+                        <p>
+                        My mission is to <strong>create impactful visual and digital solutions that combine creativity with technical precision to inspire, educate, and transform underserved communities</strong>. I believe the lack of access to digital skills and technology among refugee and marginalised populations is one of the most pressing challenges of our time — and addressing it is not just my profession, it's my mandate.
+                        </p>
+
+                        <p>
+                        With formal education in <strong>Computer Science, Community Development, Biblical Studies, and Nutrition</strong>, and certifications in <strong>Front-End Development, Data Protection, Leadership, Counseling, and Entrepreneurship</strong>, I bring both vision and versatility to every project. I’m also trained in <strong>Organisational Board Governance</strong>, contributing to institutional development and strategic leadership.
+                        </p>
+
+                        <p>
+                        My vision is of a world where <strong>every refugee and marginalised individual has access to quality education, digital tools, and economic empowerment</strong>. I’m passionate about building that future—one design, one line of code, one student at a time.
+                        </p>
+                    </details>
+
+                        <p><em style="color: #218380;">If you're seeking a passionate technologist who builds with purpose and leads with heart, let's connect.</em></p>
+ 
+
                     <div class="personal-info">
                         <div class="info-item">
                             <span>Name:</span>
@@ -508,47 +529,85 @@
 
     <!-- Education Section -->
     <section class="education">
-        <div data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200" class="container">
-            <h2 class="section-title">Education & <span>Certifications</span></h2>
-            
-            <div class="education-grid">
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Bachelor of Computer Science</h3>
-                    <p>Victoria University Kampala (Ongoing)</p>
-                </div>
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Bachelor of Community Development</h3>
-                    <p>[Institution name if available]</p>
-                </div>
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Certified Front-End Developer</h3>
-                    <p> Power Learn Project (PLP)</p>
-                </div>
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Certified Web Designer</h3>
-                    <p>FCA</p>
-                </div>
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Certificate in Data Protection and Ethics</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200" class="container">
+    <h2 class="section-title">Education & <span>Certifications</span></h2>
+
+    <div class="education-grid">
+      <div class="education-item">
+        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Bachelor of Computer Science</h3>
+        <p><strong>Victoria University Kampala</strong> (Ongoing)</p>
+      </div>
+
+      <div class="education-item">
+        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Biblical Studies & Community Dev. Outreach</h3>
+        <p><strong>Nation2Nation Christian University</strong></p>
+      </div>
+
+      <div class="education-item">
+        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Diploma in Nutrition and Health</h3>
+        <p><strong>Kenya College of Commerce and Hospitality</strong></p>
+      </div>
+
+      <div class="education-item">
+        <div class="education-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Certified Front-End Developer</h3>
+        <p><strong>Power Learn Project (PLP)</strong></p>
+      </div>
+
+      <div class="education-item">
+        <div class="education-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Certified Web Designer</h3>
+        <p><strong>Finn Church Aid (FCA)</strong></p>
+      </div>
+
+      <div class="education-item">
+        <div class="education-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Entrepreneurship Certificate</h3>
+        <p><strong>Dan Church Aid (DCA)</strong></p>
+      </div>
+
+      <div class="education-item">
+        <div class="education-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Leadership Certificate</h3>
+        <p><strong>Aspire Leaders</strong></p>
+      </div>
+
+      <div class="education-item">
+        <div class="education-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Financial Education</h3>
+        <p><strong>Dan Church Aid (DCA)</strong></p>
+      </div>
+
+      <div class="education-item">
+        <div class="education-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Counseling Skills Certificate</h3>
+        <p><strong>Jesuit Refugee Service (JRS)</strong></p>
+      </div>
+
+      <div class="education-item">
+        <div class="education-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Data Protection and Ethics</h3>
+        <p><strong>Atingi / GIZ</strong></p>
+      </div>
+
+      <div class="education-item">
+        <div class="education-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Organisation Board Management Training</h3>
+        <p><strong>IFF</strong></p>
+      </div>
+
+      <div class="education-item">
+        <div class="education-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Data Analysis & Monitoring</h3>
+        <p><strong>Coursera</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <section id="faq" class="faq-section" style="min-width: 100vh; display: flex; justify-content: center; align-items: center;" data-aos="fade-up-left">
         
@@ -709,14 +768,6 @@
                 
             </div>
         </div>
-         <div class="thank-you-box">
-    <h1>Thank You for Contacting Me!</h1>
-    <p>
-      I’ve received your message and truly appreciate your interest.<br>
-      Whether it's in web development, graphic design, M&E, ICT training, or entrepreneurship, I’m excited to connect and collaborate.<br>
-      I’ll get back to you as soon as possible.
-    </p>
-  </div>   
     </section>
 
     <!-- Footer -->
@@ -751,6 +802,19 @@
 </script>
  <script src="script.js"></script> <!-- If you have any additional JS -->
  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+ <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,fr,sw,ar',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
 </body>
 </html>
